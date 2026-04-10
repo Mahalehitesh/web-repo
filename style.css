@@ -1,14 +1,73 @@
 body {
-    text-align: center;
-    font-family: Arial;
-    background-color: #f2f2f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-    color: #2c3e50;
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
 }
 
 button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: #ddd;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
     padding: 10px;
-    font-size: 16px;
 }
