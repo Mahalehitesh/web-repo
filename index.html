@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS CI/CD Website we are the engineers..!</title>
+    <title>AWS CI/CD Website</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,9 +27,9 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>🔥 Deployed using AWS CI/CD</h1>
+        <h1>🔥 AWS CI/CD Deployment</h1>
         <p id="msg">Your website is LIVE using S3 + CodePipeline 🚀</p>
-        <button onclick="changeText()">Click Me</button>
+        <button onclick="changeText()">✨ Click Me</button>
     </section>
 
     <!-- About -->
@@ -31,7 +38,7 @@
         <p>
             This project demonstrates automated deployment using 
             <b>AWS S3</b>, <b>CodePipeline</b>, and <b>GitHub</b>.
-            Any code update is instantly reflected on the live website.
+            Any code update is instantly reflected on the live website 🚀
         </p>
     </section>
 
@@ -59,7 +66,12 @@
         <p>Made with ❤️ using AWS | © 2026</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function changeText() {
+            document.getElementById("msg").innerHTML =
+                "✅ Code updated successfully via CI/CD 🎉";
+        }
+    </script>
 
 </body>
 </html>
