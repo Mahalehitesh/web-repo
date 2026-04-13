@@ -3,73 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS CI/CD Website</title>
+    <title>AWS Smart Deploy</title>
+
     <link rel="stylesheet" href="style.css">
 
-    <!-- Smooth Scroll -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- 🔥 Navbar -->
     <nav>
-        <h2>🚀 MySite</h2>
+        <h2>☁️ CloudDeploy</h2>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 🔥 Hero -->
     <section class="hero">
-        <h1>🔥 AWS CI/CD Deployment</h1>
-        <p id="msg">Your website is LIVE using S3 + CodePipeline 🚀</p>
-        <button onclick="changeText()">✨ Click Me</button>
+        <h1>⚡ AWS CI/CD Automation</h1>
+        <p id="msg">Deploy faster with S3 + CodePipeline 🚀</p>
+        <button onclick="changeText()">🚀 Deploy Now</button>
     </section>
 
-    <!-- About -->
+    <!-- 🔥 About -->
     <section id="about">
-        <h2>📌 About Project</h2>
+        <h2>📌 About This Project</h2>
         <p>
-            This project demonstrates automated deployment using 
-            <b>AWS S3</b>, <b>CodePipeline</b>, and <b>GitHub</b>.
-            Any code update is instantly reflected on the live website 🚀
+            This smart deployment system uses AWS services to automatically 
+            update your website whenever you push code to GitHub. 
+            No manual deployment needed!
         </p>
     </section>
 
-    <!-- Features -->
+    <!-- 🔥 Features -->
     <section id="features">
-        <h2>✨ Features</h2>
+        <h2>✨ Powerful Features</h2>
+
         <div class="card-container">
             <div class="card">
-                ⚡ Fast Deployment
-                <p>Deploy within seconds using AWS pipeline</p>
+                ⚡ Instant Deployment
+                <p>Push code → Website updates instantly</p>
             </div>
+
             <div class="card">
-                ☁️ Cloud Powered
-                <p>Hosted securely on AWS S3</p>
+                ☁️ AWS Cloud Hosting
+                <p>Secure and scalable S3 hosting</p>
             </div>
+
             <div class="card">
-                🔄 Auto Update
-                <p>Changes push automatically from GitHub</p>
+                🔄 Continuous Integration
+                <p>Fully automated CI/CD pipeline</p>
+            </div>
+
+            <div class="card">
+                🔐 Secure Access
+                <p>Managed permissions and policies</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 🔥 Contact -->
+    <section id="contact">
+        <h2>📩 Contact</h2>
+        <p>Want to build something amazing? Let's connect 🚀</p>
+        <button onclick="contactMsg()">Say Hello 👋</button>
+    </section>
+
+    <!-- 🔥 Footer -->
     <footer>
-        <p>Made with ❤️ using AWS | © 2026</p>
+        <p>© 2026 CloudDeploy | Built with ❤️ using AWS</p>
     </footer>
 
     <script>
         function changeText() {
             document.getElementById("msg").innerHTML =
-                "✅ Code updated successfully via CI/CD 🎉";
+                "✅ Successfully deployed via AWS CI/CD 🎉";
+        }
+
+        function contactMsg() {
+            alert("Thanks for visiting! 🚀");
         }
     </script>
 
