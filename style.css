@@ -2,14 +2,13 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f0f9ff, #ecfeff, #fef9c3);
+    background: #ffffff;
     color: #1e293b;
 }
 
 /* 🔥 Navbar */
 nav {
-    background: rgba(255,255,255,0.7);
-    backdrop-filter: blur(10px);
+    background: white;
     border-bottom: 1px solid #e2e8f0;
 }
 
@@ -27,26 +26,33 @@ nav a:hover {
 
 /* 🔥 Hero */
 .hero {
-    background: linear-gradient(120deg, #60a5fa, #34d399, #facc15);
-    color: white;
-    border-radius: 0 0 60px 60px;
+    background: linear-gradient(120deg, #e0f2fe, #f0fdf4);
+    border-radius: 0 0 50px 50px;
 }
 
 .hero h1 {
-    -webkit-text-fill-color: white;
+    background: linear-gradient(to right, #2563eb, #22c55e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #475569;
 }
 
 /* 🔥 Cards */
 .card {
-    background: white;
-    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
 }
 
 .card:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-color: #22c55e;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* 🔥 Footer */
 footer {
-    background: rgba(255,255,255,0.8);
+    background: #f8fafc;
+    color: #64748b;
 }
